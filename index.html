@@ -4,39 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DealGuardian</title>
+    <title>DealGuardian - Your Trusted Online Transaction Partner</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 40px; background-color: #f9f9f9; color: #333; }
-        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { color: #007bff; }
-        label { display: block; margin-top: 10px; }
-        input, textarea { width: 100%; padding: 10px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc; }
-        button { margin-top: 15px; padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; }
-        button:hover { background-color: #218838; }
-        .whatsapp-button { margin-top: 20px; display: block; text-align: center; background-color: #25D366; color: white; padding: 10px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f6fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #1a252f;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+        .header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .header nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .header nav a:hover {
+            color: #f1c40f;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #2c3e50;
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin: 0 0 20px 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+        }
+        .badge {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #bdc3c7;
+        }
+        .footer {
+            background-color: #1a252f;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+        .footer a {
+            color: #f1c40f;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .header nav {
+                margin-top: 10px;
+            }
+            .header nav a {
+                margin: 0 10px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>DealGuardian</h1>
-        <p>Your Trusted Partner in Online Transactions</p>
-        <form action="https://formspree.io/f/xwkgwgej" method="POST" enctype="multipart/form-data">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="_replyto" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <label for="file">Attach a file (optional):</label>
-            <input type="file" id="file" name="file">
-
-            <button type="submit">Send Message</button>
-        </form>
-
-        <a class="whatsapp-button" href="https://wa.me/27721234567" target="_blank">Contact via WhatsApp</a>
+    <div class="header">
+        <div class="logo">DealGuardian</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+        </nav>
+    </div>
+    <div class="hero">
+        <h1>Welcome to DealGuardian</h1>
+        <p>Want to Buy or Sell something Safely. Let us handle the transaction and protect both sides.</p>
+        <div class="badge">Secured by DealGuardian Trust Seal</div>
+    </div>
+    <div class="footer">
+        <p>Contact us: <a href="mailto:dludlu@dealguardian.co.za">dludlu@dealguardian.co.za</a> | <a href="https://wa.me/27633660607?text=Hello,%20I%20need%20assistance%20with%20DealGuardian!" target="_blank">WhatsApp</a></p>
+        <p>Follow us: <a href="#">Twitter</a> | <a href="#">Facebook</a></p>
+        <p>© 2025 DealGuardian. All rights reserved. <a href="#privacy">Privacy Policy</a></p>
     </div>
 </body>
 </html>
