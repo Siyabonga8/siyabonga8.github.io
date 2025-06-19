@@ -2,112 +2,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DealGuardian - Your Trusted Online Transaction Partner</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f6fa;
-            color: #2c3e50;
-            line-height: 1.6;
-        }
-        .header {
-            background-color: #1a252f;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #fff;
-        }
-        .header .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        .header nav a {
-            color: #fff;
-            margin-left: 20px;
-            text-decoration: none;
-            font-size: 1rem;
-        }
-        .header nav a:hover {
-            color: #f1c40f;
-        }
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: #2c3e50;
-            color: #fff;
-        }
-        .hero h1 {
-            font-size: 2.8rem;
-            margin: 0 0 20px 0;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 30px auto;
-        }
-        .badge {
-            margin-top: 20px;
-            font-size: 0.9rem;
-            color: #bdc3c7;
-        }
-        .footer {
-            background-color: #1a252f;
-            padding: 20px;
-            text-align: center;
-            color: #fff;
-            font-size: 0.9rem;
-        }
-        .footer a {
-            color: #f1c40f;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                padding: 10px;
-            }
-            .header nav {
-                margin-top: 10px;
-            }
-            .header nav a {
-                margin: 0 10px;
-            }
-            .hero h1 {
-                font-size: 2rem;
-            }
-            .hero p {
-                font-size: 1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DealGuardian - Your Trusted Online Transaction Partner</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f6fa;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+    .header {
+      background-color: #1a252f;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+    .header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .header nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .header nav a:hover {
+      color: #f1c40f;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #2c3e50;
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin: 0 0 20px 0;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+    }
+    .badge {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #bdc3c7;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #1a252f;
+    }
+    #service-description {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #34495e;
+      background-color: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .footer {
+      background-color: #1a252f;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #f1c40f;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    select {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        padding: 10px;
+      }
+      .header nav {
+        margin-top: 10px;
+      }
+      .header nav a {
+        margin: 0 10px;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">DealGuardian</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-        </nav>
-    </div>
-    <div class="hero">
-        <h1>Welcome to DealGuardian</h1>
-        <p>Want to Buy or Sell something Safely? Let us handle the transaction and protect both sides.</p>
-        <div class="badge">Secured by DealGuardian Trust Seal</div>
-    </div>
-    <div class="footer">
-        <p>Contact us: <a href="mailto:dludlu@dealguardian.co.za">dludlu@dealguardian.co.za</a> | <a href="https://wa.me/27633660607?text=Hello,%20I%20need%20assistance%20with%20DealGuardian!" target="_blank">WhatsApp</a></p>
-        <p>Follow us: <a href="#">Twitter</a> | <a href="#">Facebook</a></p>
-        <p>© 2025 DealGuardian. All rights reserved. <a href="#privacy">Privacy Policy</a></p>
-    </div>
+  <div class="header">
+    <div class="logo">DealGuardian</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+    </nav>
+  </div>
+
+  <div id="home" class="hero">
+    <h1>Welcome to DealGuardian</h1>
+    <p>Want to Buy or Sell something Safely. Let us handle the transaction and protect both sides.</p>
+    <div class="badge">Secured by DealGuardian Trust Seal</div>
+  </div>
+
+  <div id="about" class="section">
+    <h2>About DealGuardian</h2>
+    <p>DealGuardian is an online platform that acts as a trusted third party in transactions between buyers and sellers. We ensure that both parties are protected and satisfied before any money changes hands.</p>
+  </div>
+
+  <div id="services" class="section">
+    <h2>Our Services</h2>
+    <p>Select a service below to learn more:</p>
+    <select onchange="showService(this.value)">
+      <option value="">-- Select a Service --</option>
+      <option value="escrow">Secure Escrow</option>
+      <option value="mediation">Dispute Mediation</option>
+      <option value="verification">Verification</option>
+    </select>
+    <div id="service-description"></div>
+  </div>
+
+  <div class="footer">
+    <p>Contact us: <a href="mailto:dludlu@dealguardian.co.za">dludlu@dealguardian.co.za</a> | <a href="https://wa.me/27633660607?text=Hello,%20I%20need%20assistance%20with%20DealGuardian!" target="_blank">WhatsApp</a></p>
+    <p>Follow us: <a href="#">Twitter</a> | <a href="#">Facebook</a></p>
+    <p>© 2025 DealGuardian. All rights reserved. <a href="#privacy">Privacy Policy</a></p>
+  </div>
+
+  <script>
+    function showService(service) {
+      let description = "";
+      if (service === "escrow") {
+        description = "We hold payment securely until both buyer and seller are satisfied.";
+      } else if (service === "mediation") {
+        description = "We assist in resolving disputes fairly between both parties.";
+      } else if (service === "verification") {
+        description = "We verify products, services, and seller legitimacy before payment.";
+      }
+      document.getElementById("service-description").innerText = description;
+    }
+  </script>
 </body>
 </html>
